@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:internship_project/model.dart';
 import 'package:internship_project/screens/achievements.dart';
 import 'package:internship_project/screens/fourth_screen.dart';
+import 'package:internship_project/screens/leaderboard.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -87,7 +88,7 @@ class Home extends StatelessWidget {
                         Text(
                           "Current league",
                           style: TextStyle(
-                            color: Colors.redAccent,
+                            color: Colors.pink,
                             fontSize: 20,
                           ),
                         ),
@@ -293,6 +294,36 @@ class Home extends StatelessWidget {
                 )),
               ),
               Divider1(),
+              TextModel2("Clan discussions"),
+              const SizedBox(
+                height: 20,
+              ),
+              TextModel3("General thread:", "15 unread messages"),
+              TextModel3("(live) Anyone enthu for trading league and many",
+                  "10 unread messages"),
+              TextModel3("(live) Anyone enthu for trading league and many",
+                  "10 unread messages"),
+              Container(
+                child: Center(
+                    child: InkWell(
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const Leaderboard()));
+                  },
+                  child: const Text(
+                    "see more",
+                    style: TextStyle(
+                        color: Colors.yellow,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600),
+                  ),
+                )),
+              ),
+              Divider1(),
+              TextModel2("Clan members"),
+              const SizedBox(
+                height: 20,
+              ),
             ],
           ),
         ));

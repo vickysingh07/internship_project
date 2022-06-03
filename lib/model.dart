@@ -62,3 +62,51 @@ TextModel2(String text) {
     ),
   );
 }
+
+TextModel3(String text1, String text2) {
+  return Container(
+      child: Column(
+    children: [
+      SizedBox(
+        width: double.infinity,
+        child: Container(
+          padding: const EdgeInsets.only(left: 20),
+          child: Text(
+            text1,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            softWrap: false,
+            style: const TextStyle(
+              color: Colors.pink,
+              fontSize: 20,
+            ),
+            textAlign: TextAlign.left,
+          ),
+        ),
+      ),
+      const SizedBox(
+        height: 5,
+      ),
+      SizedBox(
+        width: double.infinity,
+        child: Container(
+          padding: const EdgeInsets.only(left: 20),
+          child: Text(
+            text2,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            softWrap: false,
+            style: const TextStyle(
+              color: Colors.white,
+              fontSize: 20,
+            ),
+            textAlign: TextAlign.left,
+          ),
+        ),
+      ),
+      const SizedBox(
+        height: 20,
+      ),
+    ],
+  ));
+}
