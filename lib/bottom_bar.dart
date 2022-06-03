@@ -66,7 +66,12 @@ class _BottomBarState extends State<BottomBar> {
                   color: Colors.white,
                 ),
                 label: ""),
-            BottomNavigationBarItem(icon: Icon(IconlyLight.user2), label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  IconlyLight.user2,
+                  color: Colors.white,
+                ),
+                label: ""),
           ]),
     );
   }

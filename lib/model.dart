@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:flutter/material.dart';
 
 TextModel1(double size, String text1, String text2, double right2) {
@@ -9,7 +11,7 @@ TextModel1(double size, String text1, String text2, double right2) {
         Text(
           text1,
           style: const TextStyle(
-            color: Colors.redAccent,
+            color: Colors.pink,
             fontSize: 20,
           ),
         ),
@@ -21,6 +23,42 @@ TextModel1(double size, String text1, String text2, double right2) {
           ),
         ),
       ],
+    ),
+  );
+}
+
+Divider1() {
+  return Column(
+    children: const [
+      SizedBox(
+        height: 18,
+      ),
+      Divider(
+        color: Colors.white,
+        thickness: 3,
+        indent: 18,
+        endIndent: 18,
+      ),
+      SizedBox(
+        height: 14,
+      ),
+    ],
+  );
+}
+
+TextModel2(String text) {
+  return SizedBox(
+    width: double.infinity,
+    child: Container(
+      padding: const EdgeInsets.only(left: 20),
+      child: Text(
+        text,
+        style: const TextStyle(
+          color: Colors.yellow,
+          fontSize: 22,
+        ),
+        textAlign: TextAlign.left,
+      ),
     ),
   );
 }
