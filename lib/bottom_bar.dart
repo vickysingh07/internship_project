@@ -41,36 +41,39 @@ class _BottomBarState extends State<BottomBar> {
           backgroundColor: Colors.black,
           currentIndex: _selectedIndex,
           onTap: _selectedPage,
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
+          items: <BottomNavigationBarItem>[
+            const BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home,
                   color: Colors.white,
                 ),
                 label: ""),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(
                   Icons.star,
                   color: Colors.white,
                 ),
                 label: ""),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(
                   Icons.leaderboard,
                   color: Colors.white,
                 ),
                 label: ""),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(
                   Icons.emoji_people_sharp,
                   color: Colors.white,
                 ),
                 label: ""),
             BottomNavigationBarItem(
-                icon: Icon(
-                  IconlyLight.user2,
-                  color: Colors.white,
-                ),
+                icon: CircleAvatar(
+                    radius: 20,
+                    backgroundColor: Colors.white,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(50),
+                      child: Image.asset("assets/images/boy_face.jpg"),
+                    )),
                 label: ""),
           ]),
     );
