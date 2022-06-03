@@ -110,3 +110,34 @@ TextModel3(String text1, String text2) {
     ],
   ));
 }
+
+ImageTextModel(String img, String text) {
+  return Container(
+    margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        CircleAvatar(
+            radius: 25,
+            backgroundColor: Colors.white,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(50),
+              child: Image.asset(img),
+            )),
+        const SizedBox(
+          width: 34,
+        ),
+        Flexible(
+          child: Text(
+            text,
+            textAlign: TextAlign.start,
+            style: const TextStyle(
+              color: Colors.pink,
+              fontSize: 20,
+            ),
+          ),
+        ),
+      ],
+    ),
+  );
+}

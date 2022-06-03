@@ -199,7 +199,7 @@ class Home extends StatelessWidget {
                     "see more",
                     style: TextStyle(
                         color: Colors.yellow,
-                        fontSize: 16,
+                        fontSize: 15,
                         fontWeight: FontWeight.w600),
                   ),
                 )),
@@ -288,7 +288,7 @@ class Home extends StatelessWidget {
                     "see more",
                     style: TextStyle(
                         color: Colors.yellow,
-                        fontSize: 16,
+                        fontSize: 15,
                         fontWeight: FontWeight.w600),
                   ),
                 )),
@@ -314,7 +314,7 @@ class Home extends StatelessWidget {
                     "see more",
                     style: TextStyle(
                         color: Colors.yellow,
-                        fontSize: 16,
+                        fontSize: 15,
                         fontWeight: FontWeight.w600),
                   ),
                 )),
@@ -324,6 +324,10 @@ class Home extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
+              ImageTextModel(
+                  "assets/images/face1.jpg", "Lorem ipsum - Clan head"),
+              ImageTextModel(
+                  "assets/images/face3.jpg", "Lorem ipsum - Debating Sensei"),
             ],
           ),
         ));

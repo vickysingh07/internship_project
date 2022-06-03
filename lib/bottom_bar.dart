@@ -44,24 +44,28 @@ class _BottomBarState extends State<BottomBar> {
           items: <BottomNavigationBarItem>[
             const BottomNavigationBarItem(
                 icon: Icon(
+                  size: 30,
                   Icons.home,
                   color: Colors.white,
                 ),
                 label: ""),
             const BottomNavigationBarItem(
                 icon: Icon(
+                  size: 30,
                   Icons.star,
                   color: Colors.white,
                 ),
                 label: ""),
             const BottomNavigationBarItem(
                 icon: Icon(
+                  size: 30,
                   Icons.leaderboard,
                   color: Colors.white,
                 ),
                 label: ""),
             const BottomNavigationBarItem(
                 icon: Icon(
+                  size: 30,
                   Icons.emoji_people_sharp,
                   color: Colors.white,
                 ),
